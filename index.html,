@@ -1,13 +1,39 @@
-
 <!DOCTYPE html>
-<html>
+<html lang=“en”>
 <head>
-    <title>NASKO X GLOBAL LIMITED</ title>
-    < link rel=“style sheet” href=style. ces”>
-</head>
+    <meta charset=“UTF-8”>
+    <meta name=“viewport”content=“width= device-width, initial_scale=1.0”>
+    < title>NASKO X GLOBAL LIMITED</title>
+    <link rel=“stylesheet”
+href=“style.css”>
+</body>
 
-< body>
-   < h1>NASKO X GLOBAL LIMITED</ title>
-<p>welcome to NASKO X Global limited.</p>
+<body>
+    < h1>NASKO X GLOBAL LIMITED</h1>
+    <p> Internet service & digital
+solution</p>
+<h2>our service</h2>
+
+<p>Airtel data 100GB</p>
+<p>mtn data 1200GB</p>
+<p>unlimited Internet</p>
+<p>5G rour sales and ins tallation</p>
+<p>nimc enrollment</p>
+<p> name of modification</p>
+<p> change of address
+<p> change of phone number</p>
+<p>IPE clearance</p>
+<p>data sim vendor
+<p> pocket data</p>
+<p> other Internet service</p>
+<h2> contact us</h2>
+<p> phone: 07068776846</p>
+<p>WhatsApp: 07068776846</p>
+<p>Email: yourcompany@gmail.com</p>
+<p>Address: R/Lemo, Layin Daiba, Dala</p>
 </body>
 </html>
+
+
+
+
