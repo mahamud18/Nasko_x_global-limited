@@ -19,10 +19,9 @@ body {
 /* HEADER */
 
 .header {
-    width: 100%;
     background: #061a35;
     color: white;
-    padding: 18px 7%;
+    padding: 15px 7%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -31,12 +30,26 @@ body {
     z-index: 1000;
 }
 
-.logo h2 {
-    font-size: 23px;
-    letter-spacing: 2px;
+.logo-area {
+    display: flex;
+    align-items: center;
+    gap: 12px;
 }
 
-.logo span {
+.logo-area img {
+    width: 58px;
+    height: 58px;
+    object-fit: contain;
+    border-radius: 8px;
+    background: white;
+}
+
+.logo-area h2 {
+    font-size: 21px;
+    letter-spacing: 1px;
+}
+
+.logo-area span {
     font-size: 11px;
     letter-spacing: 4px;
     color: #25d366;
@@ -61,20 +74,19 @@ nav a:hover {
 /* HERO */
 
 .hero {
-    min-height: 650px;
+    min-height: 600px;
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     text-align: center;
     padding: 80px 20px;
+    color: white;
 
     background: linear-gradient(
         135deg,
         #061a35,
-        #0b467f
+        #0b4d85
     );
-
-    color: white;
 }
 
 .hero-content {
@@ -86,20 +98,19 @@ nav a:hover {
     font-size: 15px;
     font-weight: bold;
     letter-spacing: 4px;
-    margin-bottom: 18px;
+    margin-bottom: 15px;
 }
 
 .hero h1 {
-    font-size: 52px;
+    font-size: 50px;
     line-height: 1.15;
-    margin-bottom: 25px;
+    margin-bottom: 20px;
 }
 
 .hero-content > p:not(.welcome) {
     font-size: 20px;
     color: #e8eef5;
-    max-width: 650px;
-    margin: 0 auto 35px;
+    margin-bottom: 30px;
 }
 
 
@@ -145,12 +156,12 @@ nav a:hover {
 /* SERVICES */
 
 .services {
-    padding: 90px 7%;
+    padding: 85px 7%;
     text-align: center;
 }
 
 .section-label {
-    color: #25a866;
+    color: #16a05d;
     font-size: 13px;
     font-weight: bold;
     letter-spacing: 3px;
@@ -161,61 +172,94 @@ nav a:hover {
 .about h2,
 .contact h2 {
     color: #061a35;
-    font-size: 38px;
+    font-size: 36px;
     margin-bottom: 15px;
 }
 
 .section-description {
     max-width: 650px;
-    margin: 0 auto 50px;
+    margin: 0 auto 45px;
     color: #666;
 }
 
 .service-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 25px;
 }
 
 .service-card {
     background: white;
     padding: 35px 25px;
-    border-radius: 15px;
+    border-radius: 16px;
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
     transition: 0.3s;
     border-top: 4px solid #061a35;
 }
 
 .service-card:hover {
-    transform: translateY(-10px);
+    transform: translateY(-8px);
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
 }
 
-.icon {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    min-width: 65px;
-    height: 65px;
-    padding: 10px;
-    border-radius: 50%;
-    background: #061a35;
-    color: white;
-    font-size: 12px;
+
+/* AIRTEL */
+
+.airtel-card {
+    border-top-color: #e30613;
+}
+
+.airtel-card .brand-name {
+    color: #e30613;
+}
+
+
+/* MTN */
+
+.mtn-card {
+    border-top-color: #ffcc00;
+}
+
+.mtn-card .brand-name {
+    color: #d4a900;
+}
+
+.brand-name {
+    font-size: 28px;
     font-weight: bold;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
 .service-card h3 {
     color: #061a35;
-    margin-bottom: 15px;
     font-size: 21px;
+    margin-bottom: 10px;
 }
 
 .service-card p {
     color: #666;
-    font-size: 15px;
-    margin-bottom: 8px;
+    margin-bottom: 10px;
+}
+
+.service-card strong {
+    display: block;
+    color: #061a35;
+    font-size: 28px;
+    margin-top: 15px;
+}
+
+.service-icon {
+    width: 70px;
+    height: 70px;
+    margin: 0 auto 20px;
+    border-radius: 50%;
+    background: #061a35;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    font-weight: bold;
 }
 
 
@@ -223,7 +267,7 @@ nav a:hover {
 
 .about {
     background: white;
-    padding: 90px 20px;
+    padding: 85px 20px;
     text-align: center;
 }
 
@@ -242,17 +286,17 @@ nav a:hover {
 /* CONTACT */
 
 .contact {
-    padding: 90px 20px;
+    padding: 85px 20px;
     text-align: center;
     background: #f5f7fa;
 }
 
 .contact-info {
-    margin-top: 35px;
+    margin-top: 30px;
 }
 
 .contact-info p {
-    margin: 15px 0;
+    margin: 14px 0;
     font-size: 17px;
 }
 
@@ -263,7 +307,7 @@ nav a:hover {
 }
 
 .contact-info a:hover {
-    color: #25a866;
+    color: #16a05d;
 }
 
 
@@ -276,10 +320,6 @@ footer {
     padding: 35px 20px;
 }
 
-footer h3 {
-    margin-bottom: 8px;
-}
-
 footer p {
     color: #cbd5e1;
 }
@@ -290,64 +330,38 @@ footer .copyright {
 }
 
 
-/* MOBILE */
+/* TABLET */
 
 @media (max-width: 850px) {
 
     .header {
         flex-direction: column;
         gap: 15px;
-        padding: 18px 20px;
-    }
-
-    nav {
-        gap: 15px;
-    }
-
-    nav a {
-        font-size: 14px;
-    }
-
-    .hero {
-        min-height: 580px;
-    }
-
-    .hero h1 {
-        font-size: 38px;
-    }
-
-    .hero-content > p:not(.welcome) {
-        font-size: 17px;
     }
 
     .service-grid {
         grid-template-columns: 1fr 1fr;
     }
+
+    .hero h1 {
+        font-size: 40px;
+    }
 }
 
+
+/* MOBILE */
 
 @media (max-width: 550px) {
 
-    .hero h1 {
-        font-size: 32px;
+    .header {
+        padding: 15px;
     }
 
-    .services h2,
-    .about h2,
-    .contact h2 {
-        font-size: 30px;
+    .logo-area img {
+        width: 50px;
+        height: 50px;
     }
 
-    .service-grid {
-        grid-template-columns: 1fr;
-    }
-
-    nav {
-        gap: 10px;
-    }
-
-    nav a {
-        font-size: 13px;
-    }
-}
+    .logo-area h2 {
+   
 
